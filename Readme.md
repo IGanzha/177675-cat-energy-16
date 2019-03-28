@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Ганжа](https://up.htmlacademy.ru/adaptive/16/user/177675).
-* Наставник: `Неизвестно`.
+* Наставник: [Кексобот].
 
 ---
 
