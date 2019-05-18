@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo-block">
-        <a class="page-header__logo-link" href="#">
+        <a class="page-header__logo-link" href="index.html">
           <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Cat Energy" width="195" height="40">
         </a>
       </div>
@@ -18,13 +18,13 @@
         </button>
         <ul class="header-nav__list">
           <li class="header-nav_item">
-            <a href="#" class="header-nav__link header-nav__link--active">Главная</a>
+            <a href="index.html" class="header-nav__link">Главная</a>
           </li>
           <li class="header-nav_item">
             <a href="Catalog.html" class="header-nav__link">Каталог продукции</a>
           </li>
           <li class="header-nav_item">
-            <a href="form.html" class="header-nav__link">Подбор программы</a>
+            <a class="header-nav__link header-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -33,29 +33,84 @@
     <main class="page-main">
 
       <section class="form-section">
-        <form action="https://echo.htmlacademy.ru" method="get" class="program-selection">
-          <h1 class="program-selection__title">Подбор программы</h1>
-          <p class="program-selection__intro">Заполните программу и мы подберем программу питания для вашего кота</p>
-          <div class="program-selection__part1">
-            <label for="name-field" class="program-selection__label"> Имя*:
-              <input type="text" id="name-field" name="name" class="program-selection__text-input" placeholder="Барсик" required>
-            </label>
 
-            <label for="weight-field" class="program-selection__label"> Вес (кг)*:
-              <input type="text" id="weight-field" name="weight" class="program-selection__text-input" placeholder="7" required>
-            </label>
+        <h1 class="form-section__title">Подбор программы</h1>
+        <p class="form-section__intro">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
 
-            <label for="age-field" class="program-selection__label"> Возраст (лет)*:
-              <input type="text" id="age-field" name="age" class="program-selection__text-input" placeholder="7">
-            </label>
-          </div>
+        <form action="https://echo.htmlacademy.ru" method="get" class="program-form">
 
-          <div class="program-selection__part2">
-            <label for="program-slim" class="program-selection__label"> Похудение
-              <input type="radio" id="program-slim" name="program" value="slim" class="program-selection__radio-input">
+          <div class="program-form__block program-form__block--first">
+            <label for="name-field" class="program-form__label"><span class="program-form__label-text">Имя*:</span>
+              <input type="text" id="name-field" name="name" class="program-form__input" placeholder="БАРСИК" required>
+            </label>
+            <label for="weight-field" class="program-form__label"> <span class="program-form__label-text">Вес (кг)*:</span>
+              <input type="text" id="weight-field" name="weight" class="program-form__input" placeholder="7" required>
+            </label>
+            <label for="age-field" class="program-form__label"><span class="program-form__label-text">Возраст (лет)*:</span>
+              <input type="text" id="age-field" name="age" class="program-form__input" placeholder="7">
             </label>
           </div>
 
+          <div class="program-form__block program-form__block--choice">
+
+            <label for="program-slim" class="program-form__label">
+              <input type="radio" id="program-slim" name="program" value="slim" class="program-form__input">
+              <span class="program-form__checkbox-indicator"></span>Похудение
+            </label>
+            <label for="program-gain" class="program-form__label">
+              <input type="radio" id="program-gain" name="program" value="gain" class="program-form__input">
+              <span class="program-form__checkbox-indicator"></span>Набор массы
+            </label>
+            <label for="program-advice" class="program-form__label">
+              <input type="radio" id="program-advice" name="program" value="advice" class="program-form__input">
+              <span class="program-form__checkbox-indicator"></span>Не знаю (нужен Ваш совет)
+            </label>
+
+          </div>
+
+          <div class="program-form__block program-form__block--contacts">
+            <p class="program-form__title"><span class="program-form__title-span">Контактные данные<br>(владельца кота)</span></p>
+            <label for="owner-email" class="program-form__label"><span class="program-form__label-text">E-MAIL*</span>
+              <input type="email" id="owner-email" class="program-form__input program-form__input--email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label for="owner-phone" class="program-form__label"><span class="program-form__label-text">ТЕЛЕФОН*</span>
+              <input type="phone" id="owner-phone" class="program-form__input program-form__input--phone" required placeholder="8 (960) 900-60-90">
+            </label>
+
+          </div>
+
+          <div class="program-form__block program-form__block--comments">
+            <p class="program-form__title"><span class="program-form__title-span">Комментарий</span></p>
+
+            <label for="comments-field" class="program-form__label">
+              <textarea name="comments" id="comments-field" cols="30" rows="7" class="program-form__comments-field">Расскажите обо всех повадках кота</textarea>
+            </label>
+          </div>
+
+          <div class="program-form__block program-form__block--extra">
+            <p class="program-form__title"><span class="program-form__title-span">Дополнительно</span></p>
+            <label for="sweetener" class="program-form__label">
+              <input type="checkbox" id="sweetener" class="program-form__input" value="sweetener" checked>
+              <span class="program-form__checkbox-indicator"></span>Сахарозаменитель
+            </label>
+            <label for="water" class="program-form__label">
+              <input type="checkbox" id="water" class="program-form__input" value="water">
+              <span class="program-form__checkbox-indicator"></span>Питьевая вода
+            </label>
+            <label for="milk" class="program-form__label">
+              <input type="checkbox" id="milk" class="program-form__input" value="milk">
+              <span class="program-form__checkbox-indicator"></span>Молоко
+            </label>
+            <label for="vitamins" class="program-form__label">
+              <input type="checkbox" id="vitamins" class="program-form__input" value="vitamins">
+              <span class="program-form__checkbox-indicator"></span>Витамины
+            </label>
+
+          </div>
+          <div class="program-form__block">
+            <input type="submit" class="program-form__button button" value="Отправить заявку">
+            <p class="program-form__required-fields">* - обязательные поля</p>
+          </div>
 
         </form>
 
@@ -65,12 +120,12 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <b class="contacts__title">Приглашаем к сотрудничеству</b>
-          <p class="contacts__adress">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
-          <!-- при стилизации при необходимости изменю разметку в адресе-->
+          <p class="contacts__title">Приглашаем <br> к сотрудничеству <br>дилеров</p>
+          <p class="contacts__adress"> <span>ул. Большая <br> Конюшенная, д.19/8 </span> <br> <span>Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map"></div>
       </section>
+
     </main>
     <footer class="page-footer">
       <ul class="page-footer__list">

@@ -17,9 +17,30 @@ body {
 .page-header__logo-link {
   display: block;
   padding: 10px 20px 10px;
-  width: 235px;
+  width: 195px;
+  /*margin: 0;*/
 }
 
 .page-header__logo-img {
   height: 40px;
+}
+
+@media (min-width: 768px) {
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+  }
+
+  .page-header__logo-block {
+    border: none;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .page-header {
+    padding: 55px 110px;
+  }
 }
