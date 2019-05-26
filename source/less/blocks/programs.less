@@ -29,7 +29,7 @@
   content: "";
   display: block;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -7px;
   background-color: #68b738;
   border-radius: 50%;
@@ -81,12 +81,12 @@
   font-size: 16px;
 
   &:hover {
-    color:#111111;
+    color: #111111;
     width: 131px;
 
     &::after {
-      width:33px;
-      background-image: url("../img/icon-right-arrow-verylong.svg")
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 
@@ -117,10 +117,8 @@
 
 
 @media (min-width: 768px) {
-
   .programs {
     padding: 0 30px;
-    /*max-width: 708px;*/
   }
 
   .programs__item {
@@ -171,7 +169,6 @@
     margin-bottom: 15px;
     width: 380px;
   }
-
 }
 
 @media (min-width: 1440px) {
@@ -198,7 +195,7 @@
   .programs__title::before {
     width: 100px;
     height: 100px;
-    left: 0px;
+    left: 0;
     top: -34px;
   }
 
@@ -215,5 +212,4 @@
     left: -18px;
     top: -12px;
   }
-
 }
