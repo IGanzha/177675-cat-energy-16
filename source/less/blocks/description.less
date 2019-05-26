@@ -85,7 +85,7 @@
       margin-right: 0;
     }
 
-    &:before {
+    &::before {
       display: block;
       position: absolute;
       font-size: 281px;
@@ -97,19 +97,19 @@
       left: 120px;
     }
 
-    &--one:before {
+    &--one::before {
       content: "1";
     }
 
-    &--two:before {
+    &--two::before {
       content: "2";
     }
 
-    &--three:before {
+    &--three::before {
       content: "3";
     }
 
-    &--four:before {
+    &--four::before {
       content: "4";
     }
   }
@@ -128,7 +128,6 @@
 }
 
 @media (min-width: 1440px) {
-
   .description {
     padding: 50px 110px;
     border-bottom: none;

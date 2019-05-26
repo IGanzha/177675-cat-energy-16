@@ -22,7 +22,9 @@
   font-weight: 400;
   text-transform: uppercase;
   vertical-align: middle;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
   margin-bottom: 13px;
 
   &-text {
@@ -33,15 +35,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-/*.program-form__block--first */
-.program-form__label {
-  /*margin-bottom: 15px;*/
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-  /*max-width: 100%;*/
 }
 
 .program-form__input {
@@ -85,7 +78,7 @@ input[type="radio"]:checked + .program-form__checkbox-indicator::before {
   height: 12px;
   border-radius: 50%;
   top: 9px;
-  left:9px;
+  left: 9px;
   background-color: #68b738;
 }
 
@@ -114,7 +107,7 @@ input[type="checkbox"]:checked + .program-form__checkbox-indicator::after {
 
 /*иконка телефона и эл.почты*/
 .program-form__input[type="email"],
-.program-form__input[type="email"] {
+.program-form__input[type="phone"] {
   position: relative;
 }
 
@@ -130,13 +123,9 @@ input[type="checkbox"]:checked + .program-form__checkbox-indicator::after {
   border: 1px solid black;
 }
 
-
-
 .program-form__title {
-  /*display: inline-block;*/
   margin: 0;
   padding: 10px 0 20px;
-  /*position: relative;*/
   display: flex;
   align-items: center;
 
