@@ -10,8 +10,8 @@
   font-weight: 400;
   position: relative;
 
-  &:after {
-    content:"";
+  &::after {
+    content: "";
     position: absolute;
     display: block;
     height: 3px;
@@ -19,7 +19,7 @@
     background-color: #68b738;
     left: 248px;
     top: 12px;
-  };
+  }
 }
 
 .add-catalog__list {
@@ -38,8 +38,6 @@
   flex-wrap: wrap;
   padding: 15px 0;
   justify-content: space-between;
-/*  max-width: 400px;
-  margin: 0 auto;*/
 }
 
 .add-catalog__name {
@@ -54,11 +52,11 @@
 
 .add-catalog__amount,
 .add-catalog__price {
-    font-size: 14px;
-    line-height: 14px;
-    font-family: "Arial", sans-serif;
-    font-weight: 100;
-  }
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+}
 
 .add-catalog__item--promotion {
   padding-top: 40px;
@@ -68,7 +66,6 @@
   height: 100px;
   background: url("../img/gift-photo-mobile@1x.jpg") center center no-repeat;
   padding-top: 190px;
-
 }
 
 .add-catalog__promotion-text {
@@ -82,7 +79,7 @@
   text-align: center;
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     display: block;
@@ -91,7 +88,7 @@
     top: -120px;
     left: 54px;
     background: url("../img/icon-gift.svg") center center no-repeat;
-  };
+  }
 }
 
 .add-catalog__button {
@@ -100,7 +97,6 @@
 
 
 @media (min-width: 768px) {
-
   .add-catalog {
     padding: 70px 30px;
   }
@@ -138,22 +134,20 @@
     background: url("../img/gift-photo-tablet@1x.jpg") center center no-repeat;
     padding: 70px;
     padding-left: 420px;
-    /*background-size: cover;*/
   }
 
   .add-catalog__item--promotion {
     padding: 70px 0 7px;
-
   }
 
   .add-catalog__promotion-text {
     text-align: left;
     margin: 0;
 
-    &:before {
+    &::before {
       top: -10px;
       left: -335px;
-    };
+    }
   }
 
 }
